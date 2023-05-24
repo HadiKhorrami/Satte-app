@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:background="#F2F2F2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<!--        <EditText-->
+<!--            android:id="@+id/edtLat"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="44dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="28dp"-->
+<!--            android:background="@drawable/edittext_layout"-->
+<!--            android:elevation="8dp"-->
+<!--            android:hint="عرض جغرافیایی"-->
+<!--            android:padding="5dp"-->
+<!--            android:textSize="12sp"-->
+<!--            android:textAppearance="@style/FontForBottomNavigation"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/spnProvinces" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/edtLng"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="44dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:background="@drawable/edittext_layout"-->
+<!--            android:elevation="8dp"-->
+<!--            android:hint="طول جغرافیایی"-->
+<!--            android:padding="5dp"-->
+<!--            android:textAppearance="@style/FontForBottomNavigation"-->
+<!--            android:textSize="12sp"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/edtLat"-->
+<!--            app:layout_constraintHorizontal_bias="0.653"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/spnProvinces" />-->
+
+        <Spinner
+            android:id="@+id/spnProvinces"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/spinner_layout"
+            android:elevation="8dp"
+            android:layoutDirection="rtl"
+            android:padding="5dp"
+            android:spinnerMode="dropdown"
+            android:textDirection="rtl"
+            android:theme="@style/SpinnerTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btnShowOnMap"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:background="@drawable/showonmap_button"-->
+<!--            android:drawableEnd="@drawable/ic_baseline_add_location_alt_24"-->
+<!--            android:padding="10px"-->
+<!--            android:text="نمایش روی نقشه"-->
+<!--            android:textAppearance="@style/FontForButtonText"-->
+<!--            android:textColor="@color/white"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/spnProvinces" />-->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="28dp"
+            android:background="@drawable/all_projects_button"
+            android:drawableEnd="@drawable/ic_baseline_attach_file_24"
+            android:padding="10px"
+            android:text="آپلود فایل"
+            android:textAppearance="@style/FontForButtonText"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView5" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView6"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnUpload">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/filesLayer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </androidx.core.widget.NestedScrollView>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView5"
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="32dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spnProvinces">
+
+            <com.mapbox.mapboxsdk.maps.MapView
+                android:id="@+id/mapView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+                <androidx.appcompat.widget.AppCompatButton
+                 android:id="@+id/btnLocation"
+                 android:layout_width="30dp"
+                 android:layout_height="30dp"
+                 android:layout_marginStart="12dp"
+                 android:layout_marginTop="260dp"
+                 android:background="@drawable/showonmap_button"
+                 android:drawableEnd="@drawable/ic_baseline_my_location_24"
+                 android:padding="10px"
+                 android:onClick="zoomToMyLocation"
+                 android:textAppearance="@style/FontForButtonText"
+                 android:textColor="@color/white" />
+<!--                <androidx.appcompat.widget.AppCompatButton-->
+<!--                    android:id="@+id/btnAddOnePoint"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_marginTop="260dp"-->
+<!--                    android:background="@drawable/add_button"-->
+<!--                    android:drawableEnd="@drawable/ic_baseline_add_location_alt_24"-->
+<!--                    android:padding="10px"-->
+<!--                    android:textAppearance="@style/FontForButtonText"-->
+<!--                    android:textColor="@color/white" />-->
+
+<!--                <androidx.appcompat.widget.AppCompatButton-->
+<!--                    android:id="@+id/btnDrawPolygon"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="34dp"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_marginTop="225dp"-->
+<!--                    android:background="@drawable/add_button"-->
+<!--                    android:drawableEnd="@drawable/ic_baseline_format_shapes_24"-->
+<!--                    android:padding="10px"-->
+<!--                    android:textAppearance="@style/FontForButtonText"-->
+<!--                    android:textColor="@color/white" />-->
+
+<!--                <androidx.appcompat.widget.AppCompatButton-->
+<!--                    android:id="@+id/btnStopAddMarker"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_marginTop="190dp"-->
+<!--                    android:background="@drawable/all_projects_button"-->
+<!--                    android:drawableEnd="@drawable/ic_baseline_stop_circle_24"-->
+<!--                    android:padding="10px"-->
+<!--                    android:textAppearance="@style/FontForButtonText"-->
+<!--                    android:textColor="@color/white" />-->
+            </com.mapbox.mapboxsdk.maps.MapView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/add_button"
+            android:drawableEnd="@drawable/ic_baseline_save_24"
+            android:paddingEnd="10dp"
+            android:text="ذخیره"
+            android:textAppearance="@style/FontForButtonText"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/itemdashboard" android:icon="@drawable/ic_dashboard_black_24dp" android:title="@string/dashboard" >
+
+    </item>
+    <item android:id="@+id/itemreview" android:icon="@drawable/ic_baseline_preview_24" android:title="@string/review">
+
+    </item>‍‍‍‍‍
+
+    <item android:id="@+id/itemexploitation" android:icon="@drawable/ic_baseline_check_24" android:title="@string/exploitation">
+
+    </item>
+    <item android:id="@+id/itemprofile" android:icon="@drawable/ic_baseline_person_24" android:title="@string/profile">
+
+    </item>
+</menu>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginTop="20px"
+    android:layout_margin="10dp"
+    android:background="@drawable/save_button"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtProjectCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="123456"
+        android:textAppearance="@style/FontForEditText"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+         />
+
+    <TextView
+        android:id="@+id/txtUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="12dp"
+        android:text="ابراهیم غفاری"
+        android:textAppearance="@style/FontForEditText"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="کد پروژه"
+        android:textAppearance="@style/FontForEditText"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="96dp"
+        android:text="نام بازدید کننده"
+        android:textAppearance="@style/FontForEditText"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="192dp"
+        android:text="تاریخ آخرین بازدید"
+        android:textAppearance="@style/FontForEditText"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtModifiedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="8dp"
+        android:text="۱۴۰۱/۱۱/۰۳	"
+        android:textAppearance="@style/FontForEditText"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnShowDetail"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/show_button"
+        android:elevation="50px"
+        android:text="مشاهده"
+        android:textAppearance="@style/FontForButtonText"
+        android:textColor="#5dbea3"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

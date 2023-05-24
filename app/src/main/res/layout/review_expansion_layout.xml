@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.github.florent37.expansionpanel.ExpansionHeader
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/exp_headert_layout"
+        android:elevation="8dp"
+        app:expansion_headerIndicator="@id/headerIndicator"
+        app:expansion_layout="@id/expansionLayout"
+        app:expansion_toggleOnClick="true">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/headerIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginStart="16dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_arrow_right_24_white" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="110dp"
+                android:text="تاریخ آخرین بازدید"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/txtProjectId"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtModifiedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="218dp"
+                android:layout_marginBottom="10dp"
+                android:text="۱۴۰۱/۱۱/۰۳"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/txtProjectId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="24dp"
+                android:text="نام بازدید کننده"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtUserName"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="ابراهیم غفاری"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtProjectId" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.github.florent37.expansionpanel.ExpansionHeader>
+    <com.github.florent37.expansionpanel.ExpansionLayout
+        android:id="@+id/expansionLayout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/exp_headert_layout">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="#D18787"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:text="نوع پیشرفت فیزیکی :"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/txtHowReferWork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:text="مناقصه محدود"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView12"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="200dp"
+                android:text="نحوه ارجاع کار  :"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtContractRateBasics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="تطابق دارد"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView15"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="200dp"
+                android:text="حجم عملیات :"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="200dp"
+                android:text="کاربری :"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/txtOperationVolume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="تطابق دارد"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView13"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="200dp"
+                android:text="مشخصات فنی :"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/txtTechnicalSpecifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="تطابق دارد"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView14"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="200dp"
+                android:text="مبانی نرخ قرارداد :"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/txtPhysicalProgressType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="تطابق دارد"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView1"
+                app:layout_constraintTop_toBottomOf="@+id/txtPerformanceQuality" />
+
+            <TextView
+                android:id="@+id/txtPractical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="تطابق دارد"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView41"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:text="کیفیت اجرا :"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+            <TextView
+                android:id="@+id/txtExpressingOpinionsProviding"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="24dp"
+                android:text="اظهار نظر و ارائه راه کار فنی"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="24dp"
+                android:text="اظهار نظر و ارائه راه کار فنی  :"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+            <TextView
+                android:id="@+id/txtPerformanceQuality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="عالی"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="20dp"
+                android:text="پیشرفت ریالی (درصد) :"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtRialProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:text="20"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView18"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:text="پیشرفت فیزیکی ابتدای سال :"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/txtPercentageProgressFirstYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="10"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView19"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:text="پیشرفت فیزیکی در زمان بازدید(درصد) :"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <TextView
+                android:id="@+id/txtPhysicalProgressInspectionTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="10"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView20"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:text="وضعیت اجرا :"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <TextView
+                android:id="@+id/txtExecutionStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="متوقف شده"
+                android:textAppearance="@style/FontForEditText"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView21"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.github.florent37.expansionpanel.ExpansionLayout>
+
+</LinearLayout>

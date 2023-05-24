@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <androidx.core.widget.NestedScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:background="#F2F2F2"
+    >
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:layout_editor_absoluteX="-195dp"
+      tools:layout_editor_absoluteY="68dp">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="232dp"
+        android:elevation="10dp"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:padding="15dp"
+        android:text="اطلاعات پروژه"
+        android:textAppearance="@style/FontForEditText"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="20dp"
+        android:elevation="10dp"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:padding="15dp"
+        android:text="پیشرفت فیزیکی "
+        android:textColor="#2196F3"
+        android:textAppearance="@style/FontForEditText"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtCreditCurrentYear" />
+
+
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:elevation="10dp"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:padding="13dp"
+        android:text="وضعیت اجرا"
+        android:textAppearance="@style/FontForEditText"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt8" />
+
+    <TextView
+        android:id="@+id/txt10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        android:elevation="10dp"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:padding="13dp"
+        android:text="نحوه ارجاع کار"
+        android:textAppearance="@style/FontForEditText"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnExecutionStatus" />
+
+    <TextView
+        android:id="@+id/txt12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:elevation="10dp"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:padding="13dp"
+        android:text="نوع پیشرفت فیزیکی"
+        android:textAppearance="@style/FontForEditText"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt6" />
+
+    <TextView
+        android:id="@+id/txt14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:elevation="10dp"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:padding="13dp"
+        android:text="کاربری"
+        android:textAppearance="@style/FontForEditText"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnPhysicalProgressType" />
+
+    <TextView
+        android:id="@+id/txt15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="16dp"
+        android:elevation="10dp"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:padding="13dp"
+        android:text="مشخصات فنی"
+        android:textAppearance="@style/FontForEditText"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnOperationVolume" />
+
+    <TextView
+        android:id="@+id/txt13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="16dp"
+        android:elevation="10dp"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:padding="13dp"
+        android:text="حجم عملیات"
+        android:textAppearance="@style/FontForEditText"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt6" />
+
+    <TextView
+        android:id="@+id/txt11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="16dp"
+        android:elevation="10dp"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:padding="13dp"
+        android:text="مبانی نرخ قرارداد"
+        android:textAppearance="@style/FontForEditText"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnPerformanceQuality" />
+
+    <TextView
+        android:id="@+id/txt9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="16dp"
+        android:elevation="10dp"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:padding="13dp"
+        android:text="کیفیت اجرا"
+        android:textAppearance="@style/FontForEditText"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt8" />
+
+    <TextView
+        android:id="@+id/txt8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="20dp"
+        android:elevation="10dp"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:padding="15dp"
+        android:text="اطلاعات نظارتی"
+        android:textColor="#2196F3"
+        android:textAppearance="@style/FontForEditText"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtSearch" />
+
+    <TextView
+        android:id="@+id/txt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="20dp"
+        android:elevation="10dp"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:padding="15dp"
+        android:text="رعایت مفاد موافقت نامه"
+        android:textAppearance="@style/FontForEditText"
+        android:textSize="20sp"
+        android:textColor="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnHowReferWork" />
+
+    <TextView
+        android:id="@+id/txt7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:elevation="10dp"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:padding="20dp"
+        android:text="علل تاخیر"
+        android:textAppearance="@style/FontForEditText"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt4" />
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="20dp"
+        android:elevation="10dp"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:padding="15dp"
+        android:text="اظهار نظر"
+        android:textAppearance="@style/FontForEditText"
+        android:textSize="20sp"
+        android:textColor="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnPractical" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="232dp"
+        android:elevation="10dp"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:padding="15dp"
+        android:text="اطلاعات پروژه"
+        android:textAppearance="@style/FontForEditText"
+        android:textSize="20sp"
+        android:textColor="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtProjectCode"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_layout"
+        android:elevation="10dp"
+        android:gravity="right"
+        android:hint="کد پروژه*"
+        android:layoutDirection="rtl"
+        android:padding="15dp"
+        android:textAppearance="@style/FontForEditText"
+        app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt" />
+
+    <EditText
+        android:id="@+id/edtExpressingOpinionsProviding"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edittext_layout"
+        android:elevation="10dp"
+        android:gravity="top|start"
+        android:hint="اظهار نظر و ارائه راه کار فنی"
+        android:lines="8"
+        android:maxLines="10"
+        android:minLines="6"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox10" />
+
+    <EditText
+        android:id="@+id/edtSearch"
+        android:layout_width="300dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_layout"
+        android:elevation="10dp"
+        android:hint=" پیشرفت فیزیکی در زمان بازدید(درصد)*"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPercentageProgressFirstYear" />
+
+    <EditText
+        android:id="@+id/edtTitle"
+        android:layout_width="345dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edittext_layout"
+        android:elevation="10dp"
+        android:enabled="false"
+        android:hint="عنوان پروژه"
+        android:padding="5dp"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProjectCode" />
+
+    <EditText
+        android:id="@+id/edtBahreBardar"
+        android:layout_width="345dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edittext_layout"
+        android:elevation="10dp"
+        android:enabled="false"
+        android:hint="دستگاه بهره بردار"
+        android:padding="5dp"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTitle" />
+
+    <EditText
+        android:id="@+id/edtStartYear"
+        android:layout_width="165dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edittext_layout"
+        android:elevation="10dp"
+        android:enabled="false"
+        android:hint="سال شروع"
+        android:padding="5dp"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtProjectType" />
+
+    <EditText
+        android:id="@+id/edtTagsimatName"
+        android:layout_width="165dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edittext_layout"
+        android:elevation="10dp"
+        android:enabled="false"
+        android:hint="نام شهرستان"
+        android:padding="5dp"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtStartYear" />
+
+    <EditText
+        android:id="@+id/edtPaidUptoDatePreviousYear"
+        android:layout_width="165dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext_layout"
+        android:elevation="10dp"
+        android:enabled="false"
+        android:hint="پرداختی تا سال قبل(میلیون ریال)"
+        android:padding="5dp"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTagsimatName" />
+
+    <EditText
+        android:id="@+id/edtCreditCurrentYear"
+        android:layout_width="165dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edittext_layout"
+        android:elevation="10dp"
+        android:enabled="false"
+        android:hint=" اعتبار سال جاری(میلیون ریال)"
+        android:padding="5dp"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTagsimatName" />
+
+    <EditText
+        android:id="@+id/edtEndYear"
+        android:layout_width="165dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext_layout"
+        android:elevation="10dp"
+        android:enabled="false"
+        android:hint="سال اتمام"
+        android:padding="5dp"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtProjectType" />
+
+    <EditText
+        android:id="@+id/edtProjectExecuteType"
+        android:layout_width="165dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_layout"
+        android:elevation="10dp"
+        android:enabled="false"
+        android:hint="نحوه اجرا"
+        android:padding="5dp"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtBahreBardar" />
+
+    <EditText
+        android:id="@+id/edtProjectCredit"
+        android:layout_width="165dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_layout"
+        android:elevation="10dp"
+        android:enabled="false"
+        android:hint="کل اعتبار(میلیون ریال)"
+        android:padding="5dp"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtStartYear" />
+
+    <EditText
+        android:id="@+id/edtProjectType"
+        android:layout_width="165dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edittext_layout"
+        android:elevation="10dp"
+        android:enabled="false"
+        android:hint="نوع پروژه"
+        android:padding="5dp"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtBahreBardar" />
+
+    <EditText
+        android:id="@+id/edtRialProgress"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edittext_layout"
+        android:elevation="10dp"
+        android:hint="پیشرفت ریالی (درصد)*"
+        android:padding="5dp"
+        android:inputType="number"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt2" />
+
+    <Spinner
+        android:id="@+id/spnExecutionStatus"
+        android:layout_width="165dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/spinner_layout"
+        android:elevation="10dp"
+        android:entries="@array/spnExecutionStatusArray"
+        android:layoutDirection="rtl"
+        android:padding="5dp"
+        android:spinnerMode="dropdown"
+        android:textDirection="rtl"
+        android:theme="@style/SpinnerTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt5" />
+
+    <Spinner
+        android:id="@+id/spnPerformanceQuality"
+        android:layout_width="165dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/spinner_layout"
+        android:drawSelectorOnTop="true"
+        android:elevation="10dp"
+        android:entries="@array/spnPerformanceQualityArray"
+        android:layoutDirection="rtl"
+        android:padding="5dp"
+        android:spinnerMode="dropdown"
+        android:textDirection="rtl"
+        android:theme="@style/SpinnerTheme"
+        app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt9" />
+
+    <Spinner
+        android:id="@+id/spnHowReferWork"
+        android:layout_width="165dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/spinner_layout"
+        android:elevation="10dp"
+        android:entries="@array/spnHowReferWorkArray"
+        android:layoutDirection="rtl"
+        android:padding="5dp"
+        android:spinnerMode="dropdown"
+        android:textDirection="rtl"
+        android:theme="@style/SpinnerTheme"
+        app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt10" />
+
+    <Spinner
+        android:id="@+id/spnContractRateBasics"
+        android:layout_width="165dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/spinner_layout"
+        android:elevation="10dp"
+        android:entries="@array/spnContractRateBasicsArray"
+        android:layoutDirection="rtl"
+        android:padding="5dp"
+        android:spinnerMode="dropdown"
+        android:textDirection="rtl"
+        android:theme="@style/SpinnerTheme"
+        app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt11" />
+
+    <Spinner
+        android:id="@+id/spnPhysicalProgressType"
+        android:layout_width="165dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/spinner_layout"
+        android:elevation="10dp"
+        android:entries="@array/spnPhysicalProgressTypeArray"
+        android:layoutDirection="rtl"
+        android:padding="5dp"
+        android:spinnerMode="dropdown"
+        android:textDirection="rtl"
+        android:theme="@style/SpinnerTheme"
+        app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt12" />
+
+    <Spinner
+        android:id="@+id/spnPractical"
+        android:layout_width="165dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/spinner_layout"
+        android:elevation="10dp"
+        android:entries="@array/spnPracticalArray"
+        android:layoutDirection="rtl"
+        android:padding="5dp"
+        android:spinnerMode="dropdown"
+        android:textDirection="rtl"
+        android:theme="@style/SpinnerTheme"
+        app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt14" />
+
+    <Spinner
+        android:id="@+id/spnOperationVolume"
+        android:layout_width="165dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/spinner_layout"
+        android:elevation="10dp"
+        android:entries="@array/spnOperationVolumeArray"
+        android:layoutDirection="rtl"
+        android:padding="5dp"
+        android:spinnerMode="dropdown"
+        android:textDirection="rtl"
+        android:theme="@style/SpinnerTheme"
+        app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt13" />
+
+    <Spinner
+        android:id="@+id/spnTechnicalSpecifications"
+        android:layout_width="165dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/spinner_layout"
+        android:elevation="10dp"
+        android:entries="@array/spnTechnicalSpecificationsArray"
+        android:layoutDirection="rtl"
+        android:padding="5dp"
+        android:spinnerMode="dropdown"
+        android:textDirection="rtl"
+        android:theme="@style/SpinnerTheme"
+        app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt15" />
+
+    <EditText
+        android:id="@+id/edtPercentageProgressFirstYear"
+        android:layout_width="180dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_layout"
+        android:elevation="10dp"
+        android:hint=" پیشرفت فیزیکی ابتدای سال(درصد)*"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/add_button"
+        android:drawableRight="@drawable/ic_baseline_save_24"
+        android:fontFamily="@font/iransans"
+        android:paddingRight="8dp"
+        android:text="ذخیره"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtExpressingOpinionsProviding" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layoutDirection="rtl"
+        android:text="مشاور"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt7" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="188dp"
+        android:layoutDirection="rtl"
+        android:text="پیمانکار"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt7" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="268dp"
+        android:layoutDirection="rtl"
+        android:text="کمبود اعتبار مصوب"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt7" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layoutDirection="rtl"
+        android:text="کمبود تخصیص"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+
+    <CheckBox
+        android:id="@+id/checkBox9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layoutDirection="rtl"
+        android:text="مشکلات اجتماعی"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    <CheckBox
+        android:id="@+id/checkBox10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layoutDirection="rtl"
+        android:text="کمبود مصالح در منطقه"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+
+    <CheckBox
+        android:id="@+id/checkBox11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="276dp"
+        android:layoutDirection="rtl"
+        android:text="سایر"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layoutDirection="rtl"
+        android:text="پرداختی خزانه"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="224dp"
+        android:layoutDirection="rtl"
+        android:text="جذب اعتبار"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="312dp"
+        android:layoutDirection="rtl"
+        android:text="تهیه زمین"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layoutDirection="rtl"
+        android:text="دستگاه اجرایی"
+        android:textAppearance="@style/FontForEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt7" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
